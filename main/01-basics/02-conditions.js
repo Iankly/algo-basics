@@ -77,12 +77,41 @@ export function is30OrSumIs30(a, b) {
  * Write a function to check whether a given positive number is a multiple of 3 or a divisible by 7
  */
 export function isMultipleOf3OrDivisibleBy7(n) {
-    
+    if (n>0){
+        if (n%3==0){
+            return true
+        }
+        else if (n%7==0){
+            return true
+        }
+        else{
+            return false
+        }
+    }
 }
 
 /**
  * Write a function to check which number nearest to the value 100 among two given integers. Return 0 if the two numbers are equal
  */
 export function closestTo100(x, y) {
-    
+    if (x==y){
+        return 0
+    }
+    else if (x>100){
+        if (x<y){
+            return x
+        }
+        else if (x>y){
+            return y
+        }
+    }
+    else if (x<100){
+        if (x<y){
+            return y
+        }
+        else if (x>y){
+            return x
+        }
+    }
+
 }
